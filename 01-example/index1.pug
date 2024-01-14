@@ -1,0 +1,14 @@
+doctype html
+html 
+    head
+        //- link(rel="stylesheet",href="myStyle.css")
+        //- style. 
+        //-     p{
+        //-         font-family:'Courier New',Courier,monospace;
+        //-         text-decoration:underline;
+        //-     }
+    body 
+        - const myStyles={"color":"red","background-color":"blue"}
+        div(style=myStyles) this is some text 
+        - const myAttributes={"src":"myphoto.jpg","alt":"this is my photo"}
+        img&attributes(myAttributes)

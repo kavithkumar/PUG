@@ -1,0 +1,12 @@
+doctype html 
+html 
+    head 
+        title if/else demo 
+    body 
+        h1 If Else Demo 
+        - const user={'name':'john','loggedIn':false}
+        if user.loggedIn 
+            p Welcome  user.name
+        else 
+            p please login 
+            a(href='login.html') login 

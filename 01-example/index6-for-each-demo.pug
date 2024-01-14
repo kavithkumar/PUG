@@ -1,0 +1,12 @@
+doctype html
+html 
+    head 
+        title for/each Demo 
+    body 
+        h3 For-Each Demo 
+        - const names=['adam','james','john','jack']
+        - const users=[{'name':'john','active':true},{'name':'adam','active':false}]
+        each n in names 
+            p #{n}
+        each user in users 
+            p #{user.name} #{user.active}
